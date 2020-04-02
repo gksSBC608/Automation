@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="D:\201 Courses\Selenium_practice\Assignment12"/>
+			<item value="D:\201 Courses\Selenium_practice\SeleniumProject"/>
+			<item value="D:\201 Courses\Selenium_practice\Assignement11"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="D:\201 Courses\Selenium_practice\AssignementToSubmit\Module8.zip"/>
+			<item value="D:\201 Courses\Selenium_practice\AssignementToSubmit\Module09.zip"/>
+			<item value="D:\201 Courses\Selenium_practice\AssignementToSubmit\Module10.zip"/>
+			<item value=""/>
+			<item value="D:\PTCOE\Desktop Backup\pwatchDataCollector.zip"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.m2e.core.wizards.Maven2ProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.m2e"/>
+		</list>
+	</section>
+</section>

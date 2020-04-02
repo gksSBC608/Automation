@@ -1,0 +1,1099 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/6/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 31 15:46:58 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>14319 seconds (14319537 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_definition.TripList.NMA_368_VerifyPickUpScreeninActiveTrip()'><b>NMA_368_VerifyPickUpScreeninActiveTrip</b><br>Test class: test_definition.TripList</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.id:  (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.ActionUtility.waitForElementClickable(ActionUtility.java:395)
+	at utilities.ActionUtility.click(ActionUtility.java:71)
+	at business_Logic.TripListPage_Common.clickOnMyLocationIconInGoogleMap(TripListPage_Common.java:624)
+	at test_definition.TripList.NMA_368_VerifyPickUpScreeninActiveTrip(TripList.java:232)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: 
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:102)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 28 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3c9168dc (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	... 37 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: c56ae9e2-febc-43a8-aff5-718ae77251d4
+*** Element info: {Using=id, value=}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 39 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace858423246", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace858423246'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.id:  (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.ActionUtility.waitForElementClickable(ActionUtility.java:395)
+	at utilities.ActionUtility.click(ActionUtility.java:71)
+	at business_Logic.TripListPage_Common.clickOnMyLocationIconInGoogleMap(TripListPage_Common.java:624)
+	at test_definition.TripList.NMA_368_VerifyPickUpScreeninActiveTrip(TripList.java:232)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: 
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:102)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 28 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@3c9168dc (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	... 37 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: c56ae9e2-febc-43a8-aff5-718ae77251d4
+*** Element info: {Using=id, value=}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 39 more
+</pre></div></td>
+<td>270</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_744_VerifyActiveTripPickUpScreenDetails()'><b>NMA_744_VerifyActiveTripPickUpScreenDetails</b><br>Test class: test_definition.TripList</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.id:  (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.ActionUtility.waitForElementClickable(ActionUtility.java:395)
+	at utilities.ActionUtility.click(ActionUtility.java:71)
+	at business_Logic.TripListPage_Common.clickOnMyLocationIconInGoogleMap(TripListPage_Common.java:624)
+	at test_definition.TripList.NMA_744_VerifyActiveTripPickUpScreenDetails(TripList.java:254)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: 
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:102)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 28 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@552518c3 (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	... 37 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: 394b997a-cfba-4113-8a65-65d60c5fe9f8
+*** Element info: {Using=id, value=}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 39 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace443110940", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace443110940'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Located by By.id:  (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:82)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utilities.ActionUtility.waitForElementClickable(ActionUtility.java:395)
+	at utilities.ActionUtility.click(ActionUtility.java:71)
+	at business_Logic.TripListPage_Common.clickOnMyLocationIconInGoogleMap(TripListPage_Common.java:624)
+	at test_definition.TripList.NMA_744_VerifyActiveTripPickUpScreenDetails(TripList.java:254)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: 
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:102)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:301)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:43)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:284)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:672)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:668)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 28 more
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@552518c3 (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	... 37 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: 394b997a-cfba-4113-8a65-65d60c5fe9f8
+*** Element info: {Using=id, value=}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 39 more
+</pre></div></td>
+<td>269</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.NMA_961_VerifyTheTripDetailsInfoForAssignedTrips()'><b>NMA_961_VerifyTheTripDetailsInfoForAssignedTrips</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Application is not running, possibly crashed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: 142973ed-b693-4c76-91ad-9caf2dbd572c
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:170)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getText(&lt;generated&gt;)
+	at business_Logic.TripListPage_Common.verifyTheTransportInformationNameAgeGenderweightANdNoteInTripInfoTripDetailsPage(TripListPage_Common.java:1299)
+	at test_definition.TripList_TripDetails.NMA_961_VerifyTheTripDetailsInfoForAssignedTrips(TripList_TripDetails.java:176)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Application is not running, possibly crashed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: 142973ed-b693-4c76-91ad-9caf2dbd572c
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at io.appium.java_client.HasSessionDetails.getSessionDetails(HasSessionDetails.java:38)
+	at io.appium.java_client.HasSessionDetails.getSessionDetail(HasSessionDetails.java:55)
+	at io.appium.java_client.HasSessionDetails.isBrowser(HasSessionDetails.java:79)
+	at io.appium.java_client.AppiumDriver.isBrowser(AppiumDriver.java:268)
+	at io.appium.java_client.pagefactory.utils.WebDriverUnpackUtility.lambda$0(WebDriverUnpackUtility.java:96)
+	at java.util.Optional.map(Optional.java:215)
+	at io.appium.java_client.pagefactory.utils.WebDriverUnpackUtility.getCurrentContentType(WebDriverUnpackUtility.java:92)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	... 32 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace385332399", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace385332399'><pre>org.openqa.selenium.WebDriverException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Application is not running, possibly crashed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: 142973ed-b693-4c76-91ad-9caf2dbd572c
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:170)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.getText(&lt;generated&gt;)
+	at business_Logic.TripListPage_Common.verifyTheTransportInformationNameAgeGenderweightANdNoteInTripInfoTripDetailsPage(TripListPage_Common.java:1299)
+	at test_definition.TripList_TripDetails.NMA_961_VerifyTheTripDetailsInfoForAssignedTrips(TripList_TripDetails.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Application is not running, possibly crashed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: 142973ed-b693-4c76-91ad-9caf2dbd572c
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at io.appium.java_client.HasSessionDetails.getSessionDetails(HasSessionDetails.java:38)
+	at io.appium.java_client.HasSessionDetails.getSessionDetail(HasSessionDetails.java:55)
+	at io.appium.java_client.HasSessionDetails.isBrowser(HasSessionDetails.java:79)
+	at io.appium.java_client.AppiumDriver.isBrowser(AppiumDriver.java:268)
+	at io.appium.java_client.pagefactory.utils.WebDriverUnpackUtility.lambda$0(WebDriverUnpackUtility.java:96)
+	at java.util.Optional.map(Optional.java:215)
+	at io.appium.java_client.pagefactory.utils.WebDriverUnpackUtility.getCurrentContentType(WebDriverUnpackUtility.java:92)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	... 32 more
+</pre></div></td>
+<td>305</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.NMA_989_VerifyTheDropOffScreenTripsDetails()'><b>NMA_989_VerifyTheDropOffScreenTripsDetails</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td><div><pre>java.lang.AssertionError: drop - Off number is not displayed expected [true] but found [false]
+	at business_Logic.TripListPage_Common.verifyTheDropOfFdetailsForAssignedOrCancelledOrCompletedInTripDetails(TripListPage_Common.java:1115)
+	at test_definition.TripList_TripDetails.NMA_989_VerifyTheDropOffScreenTripsDetails(TripList_TripDetails.java:272)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2109219177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2109219177'><pre>java.lang.AssertionError: drop - Off number is not displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at business_Logic.TripListPage_Common.verifyTheDropOfFdetailsForAssignedOrCancelledOrCompletedInTripDetails(TripListPage_Common.java:1115)
+	at test_definition.TripList_TripDetails.NMA_989_VerifyTheDropOffScreenTripsDetails(TripList_TripDetails.java:272)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>262</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.VerifyNoCrashInApplicationIfWeKeepOnNavigatingToTripDetailsScreen()'><b>VerifyNoCrashInApplicationIfWeKeepOnNavigatingToTripDetailsScreen</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Application is not running, possibly crashed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: b27df9c7-5e10-401c-8d7f-35a6c6211797
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:170)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.click(&lt;generated&gt;)
+	at utilities.ActionUtility.click(ActionUtility.java:72)
+	at business_Logic.TripListPage_Common.clickOnBackButtonInTripDetailsPage(TripListPage_Common.java:1209)
+	at test_definition.TripList_TripDetails.VerifyNoCrashInApplicationIfWeKeepOnNavigatingToTripDetailsScreen(TripList_TripDetails.java:294)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Application is not running, possibly crashed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: b27df9c7-5e10-401c-8d7f-35a6c6211797
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at io.appium.java_client.HasSessionDetails.getSessionDetails(HasSessionDetails.java:38)
+	at io.appium.java_client.HasSessionDetails.getSessionDetail(HasSessionDetails.java:55)
+	at io.appium.java_client.HasSessionDetails.getPlatformName(HasSessionDetails.java:62)
+	at io.appium.java_client.DefaultGenericMobileDriver.toString(DefaultGenericMobileDriver.java:156)
+	at io.appium.java_client.AppiumDriver.toString(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.toString(IOSDriver.java:1)
+	at java.util.Formatter$FormatSpecifier.printString(Formatter.java:2886)
+	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2763)
+	at java.util.Formatter.format(Formatter.java:2520)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at org.openqa.selenium.remote.RemoteWebElement.setFoundBy(RemoteWebElement.java:63)
+	at org.openqa.selenium.remote.RemoteWebDriver.setFoundBy(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	... 33 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace976358110", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace976358110'><pre>org.openqa.selenium.WebDriverException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Application is not running, possibly crashed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: b27df9c7-5e10-401c-8d7f-35a6c6211797
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:170)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.click(&lt;generated&gt;)
+	at utilities.ActionUtility.click(ActionUtility.java:72)
+	at business_Logic.TripListPage_Common.clickOnBackButtonInTripDetailsPage(TripListPage_Common.java:1209)
+	at test_definition.TripList_TripDetails.VerifyNoCrashInApplicationIfWeKeepOnNavigatingToTripDetailsScreen(TripList_TripDetails.java:294)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Application is not running, possibly crashed (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: b27df9c7-5e10-401c-8d7f-35a6c6211797
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:46)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at io.appium.java_client.HasSessionDetails.getSessionDetails(HasSessionDetails.java:38)
+	at io.appium.java_client.HasSessionDetails.getSessionDetail(HasSessionDetails.java:55)
+	at io.appium.java_client.HasSessionDetails.getPlatformName(HasSessionDetails.java:62)
+	at io.appium.java_client.DefaultGenericMobileDriver.toString(DefaultGenericMobileDriver.java:156)
+	at io.appium.java_client.AppiumDriver.toString(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.toString(IOSDriver.java:1)
+	at java.util.Formatter$FormatSpecifier.printString(Formatter.java:2886)
+	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2763)
+	at java.util.Formatter.format(Formatter.java:2520)
+	at java.util.Formatter.format(Formatter.java:2455)
+	at java.lang.String.format(String.java:2940)
+	at org.openqa.selenium.remote.RemoteWebElement.setFoundBy(RemoteWebElement.java:63)
+	at org.openqa.selenium.remote.RemoteWebDriver.setFoundBy(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	... 33 more
+</pre></div></td>
+<td>217</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.VerifyTheTripHeaderStatusWithTripInformationInTripDetailsPage()'><b>VerifyTheTripHeaderStatusWithTripInformationInTripDetailsPage</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: lbl_Company
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:102)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at business_Logic.TripListPage_Common.verifyTheTransportInformationNameAgeGenderweightANdNoteInTripInfoTripDetailsPage(TripListPage_Common.java:1348)
+	at test_definition.TripList_TripDetails.VerifyTheTripHeaderStatusWithTripInformationInTripDetailsPage(TripList_TripDetails.java:332)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@165b8a71 (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	... 28 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: 63372e5b-bae8-4826-b639-a837aeaf0c0d
+*** Element info: {Using=id, value=lbl_Company}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 30 more
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1635082651", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1635082651'><pre>org.openqa.selenium.NoSuchElementException: Can&apos;t locate an element by this strategy: By.id: lbl_Company
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:102)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:61)
+	at io.appium.java_client.ios.IOSElement$$EnhancerByCGLIB$$d311658.isDisplayed(&lt;generated&gt;)
+	at business_Logic.TripListPage_Common.verifyTheTransportInformationNameAgeGenderweightANdNoteInTripInfoTripDetailsPage(TripListPage_Common.java:1348)
+	at test_definition.TripList_TripDetails.VerifyTheTripHeaderStatusWithTripInformationInTripDetailsPage(TripList_TripDetails.java:332)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@165b8a71 (tried for 15 second(s) with 500 MILLISECONDS interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:263)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:76)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:95)
+	... 28 more
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.8.0&apos;, revision: &apos;924c4067df&apos;, time: &apos;2017-11-30T11:20:39.408Z&apos;
+System info: host: &apos;A2MD24805M.local&apos;, ip: &apos;169.254.11.140&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.1&apos;, java.version: &apos;1.8.0_152&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities {agentPath: /Applications/Appium.app/Co..., app: /Volumes/Data/ipa/Navigator..., automationName: XCUITest, bootstrapPath: /Applications/Appium.app/Co..., browserName: , bundleId: com.zoll.navigatorapp, databaseEnabled: false, deviceName: iPad, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: false, noReset: true, platform: MAC, platformName: MAC, platformVersion: 10.3.3, takesScreenshot: true, udid: 452d395611353fc2de926484e99..., useNewWDA: false, webStorageEnabled: false, xcodeOrgId: JMJ682N8VQ, xcodeSigningId: iPhone Developer}
+Session ID: 63372e5b-bae8-4826-b639-a837aeaf0c0d
+*** Element info: {Using=id, value=lbl_Company}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:371)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:417)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:70)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementById(IOSDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:36)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:96)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:150)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 30 more
+</pre></div></td>
+<td>351</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_definition.Welcome.FT_Sprint1_0200_VerifyTheWelcomePageAfterLogin()'><b>FT_Sprint1_0200_VerifyTheWelcomePageAfterLogin</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>70</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.Welcome.FT_Sprint1_0210_verifyOnEnteringTheCompanyNameandTapOnNextButton()'><b>FT_Sprint1_0210_verifyOnEnteringTheCompanyNameandTapOnNextButton</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>94</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.Welcome.FT_Sprint1_0210_verifyUserCanEnterTheValueForCompanyNameByCopyPasting()'><b>FT_Sprint1_0210_verifyUserCanEnterTheValueForCompanyNameByCopyPasting</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>75</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.Welcome.FT_Sprint1_0260_verifyCreatingTheShiftWithOneCrew()'><b>FT_Sprint1_0260_verifyCreatingTheShiftWithOneCrew</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>127</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.Welcome.NMA_1360_verifyTheAlertMessageIFWEProvideIncorrectValuesInHomePage()'><b>NMA_1360_verifyTheAlertMessageIFWEProvideIncorrectValuesInHomePage</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>108</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_202_414_VerifyTheZollRespondSpinnerIsDsiplayedWhenTripListIsSelected()'><b>NMA_202_414_VerifyTheZollRespondSpinnerIsDsiplayedWhenTripListIsSelected</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>176</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_203_VerifyTheTimeStampInTripListPage()'><b>NMA_203_VerifyTheTimeStampInTripListPage</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>154</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_213_VerifyTripListHeadersinTripPage()'><b>NMA_213_VerifyTripListHeadersinTripPage</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>140</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_215_VerifyTripListMenuTab()'><b>NMA_215_VerifyTripListMenuTab</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>173</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_216_662_VerifyTheTripListItemFormat()'><b>NMA_216_662_VerifyTheTripListItemFormat</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>175</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_225_VerifyTheCoverageOfTapinRespondScreen()'><b>NMA_225_VerifyTheCoverageOfTapinRespondScreen</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>164</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.Welcome.NMA_354_verifyShiftSetupWith2CrewMembers()'><b>NMA_354_verifyShiftSetupWith2CrewMembers</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>161</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.Welcome.NMA_355_685_verifyShiftSetupAddingOnlyOneCrewMember()'><b>NMA_355_685_verifyShiftSetupAddingOnlyOneCrewMember</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>129</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.Welcome.NMA_358_688_verifyCreatingTheShiftWithOneCrew()'><b>NMA_358_688_verifyCreatingTheShiftWithOneCrew</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>127</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_367_VerifyUIElementsInActiveTrip()'><b>NMA_367_VerifyUIElementsInActiveTrip</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>378</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_371_372_VerifyThePatientInfoAndNotesInActiveTripTripInformation()'><b>NMA_371_372_VerifyThePatientInfoAndNotesInActiveTripTripInformation</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>242</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_373_VerifyUIElementsInDropScreenInActiveTrip()'><b>NMA_373_VerifyUIElementsInDropScreenInActiveTrip</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>285</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_375_VerifyActiveTripDropOffPatientInfo()'><b>NMA_375_VerifyActiveTripDropOffPatientInfo</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>332</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_667_VerifyTripViewForAssignedTripAndDetails()'><b>NMA_667_VerifyTripViewForAssignedTripAndDetails</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>188</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.Welcome.NMA_684_verifyWelcomeORShiftSetupWithCrewMembers()'><b>NMA_684_verifyWelcomeORShiftSetupWithCrewMembers</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>162</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_721_VerifyTheRespondScreenTapCoverage()'><b>NMA_721_VerifyTheRespondScreenTapCoverage</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>181</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_727_VerifyTheRespondViewOnTappingTheTopMostTripListScreen()'><b>NMA_727_VerifyTheRespondViewOnTappingTheTopMostTripListScreen</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>173</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_793_VerifyUIElementsInPatientInfoRunNumberNnotesForActiveTrip()'><b>NMA_793_VerifyUIElementsInPatientInfoRunNumberNnotesForActiveTrip</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>283</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList.NMA_794_VerifyActiveTripPatientInformation()'><b>NMA_794_VerifyActiveTripPatientInformation</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>369</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.NMA_907_VerifyTheTripDetailsPickUpScreenForAssignedOrCancelledOrCompletedTrips()'><b>NMA_907_VerifyTheTripDetailsPickUpScreenForAssignedOrCancelledOrCompletedTrips</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td></td>
+<td>243</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.NMA_908_VerifyTheTripDetailsPagePickUpInfoScreenDetails()'><b>NMA_908_VerifyTheTripDetailsPagePickUpInfoScreenDetails</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td></td>
+<td>212</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.NMA_909_VerifyTheBackButtonFunctionalityInTripDetailsPickUpInfoScreenForAssignedOrCancelledOrCompletedTrips()'><b>NMA_909_VerifyTheBackButtonFunctionalityInTripDetailsPickUpInfoScreenForAssignedOrCancelledOrCompletedTrips</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td></td>
+<td>246</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.NMA_911_VerifyTheNavigationHeaderButtonToBrowseAllTripsScreenDetails()'><b>NMA_911_VerifyTheNavigationHeaderButtonToBrowseAllTripsScreenDetails</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td></td>
+<td>229</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.NMA_945_VerifyThePickUpInfoScreenTripsDetails()'><b>NMA_945_VerifyThePickUpInfoScreenTripsDetails</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td></td>
+<td>249</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.NMA_959_VerifyTheTripDetailsInfoForAssignedTrips()'><b>NMA_959_VerifyTheTripDetailsInfoForAssignedTrips</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td></td>
+<td>217</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.VerifyButtonStatusInTripListPage()'><b>VerifyButtonStatusInTripListPage</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td></td>
+<td>174</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList.VerifyMapDirectionAddressDropOffPickUpInActiveTripForSelectedTrip()'><b>VerifyMapDirectionAddressDropOffPickUpInActiveTripForSelectedTrip</b><br>Test class: test_definition.TripList</td>
+<td></td>
+<td>388</td>
+<td>test_definition.TripList@78e67e0a</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.VerifyTheCompletedTripsInTripDetailsScreen()'><b>VerifyTheCompletedTripsInTripDetailsScreen</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td></td>
+<td>199</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.TripList_TripDetails.VerifyTheSubMenusInHamburgerMenuMobileView()'><b>VerifyTheSubMenusInHamburgerMenuMobileView</b><br>Test class: test_definition.TripList_TripDetails</td>
+<td></td>
+<td>225</td>
+<td>test_definition.TripList_TripDetails@3043fe0e</td></tr>
+<tr>
+<td title='test_definition.Welcome.VerifyWithoutSelectingTheCompanyTapOnNextButton()'><b>VerifyWithoutSelectingTheCompanyTapOnNextButton</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>85</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.Welcome.verifyUserCanTapOnAddCrewButtoninWelcomePage()'><b>verifyUserCanTapOnAddCrewButtoninWelcomePage</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>98</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+<tr>
+<td title='test_definition.Welcome.verifyWithOutCompanyNameCanWeNavigateToTripListPage()'><b>verifyWithOutCompanyNameCanWeNavigateToTripListPage</b><br>Test class: test_definition.Welcome</td>
+<td></td>
+<td>130</td>
+<td>test_definition.Welcome@bd8db5a</td></tr>
+</table><p>
+</body>
+</html>

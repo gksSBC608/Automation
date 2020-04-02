@@ -1,0 +1,10 @@
+package time_complexity.prime_numbers;
+
+public class primeNumbersClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

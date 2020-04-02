@@ -1,0 +1,9 @@
+package pages;
+
+public class HotelPage {
+
+	public HotelPage() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

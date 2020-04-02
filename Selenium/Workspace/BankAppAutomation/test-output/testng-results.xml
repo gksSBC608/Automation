@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="bankApp test suite" duration-ms="14526" started-at="2019-05-16T12:30:42Z" finished-at="2019-05-16T12:30:56Z">
+    <groups>
+    </groups>
+    <test name="chromeTest" duration-ms="7822" started-at="2019-05-16T12:30:42Z" finished-at="2019-05-16T12:30:49Z">
+      <class name="tests.HomePage">
+        <test-method status="PASS" signature="beforeClassOperations(org.testng.ITestContext, java.lang.String)[pri:0, instance:tests.HomePage@eafc191]" name="beforeClassOperations" is-config="true" duration-ms="3860" started-at="2019-05-16T12:30:42Z" finished-at="2019-05-16T12:30:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3b5fad2d]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassOperations -->
+        <test-method status="PASS" signature="testTitleOfPage()[pri:1, instance:tests.HomePage@eafc191]" name="testTitleOfPage" duration-ms="1038" started-at="2019-05-16T12:30:45Z" finished-at="2019-05-16T12:30:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitleOfPage -->
+        <test-method status="PASS" signature="testOpenAccountWorking()[pri:2, instance:tests.HomePage@eafc191]" name="testOpenAccountWorking" duration-ms="2779" started-at="2019-05-16T12:30:46Z" finished-at="2019-05-16T12:30:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenAccountWorking -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.HomePage@eafc191]" name="closeBrowser" is-config="true" duration-ms="117" started-at="2019-05-16T12:30:49Z" finished-at="2019-05-16T12:30:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.HomePage -->
+    </test> <!-- chromeTest -->
+    <test name="firefoxTest" duration-ms="6659" started-at="2019-05-16T12:30:49Z" finished-at="2019-05-16T12:30:56Z">
+      <class name="tests.HomePage">
+        <test-method status="PASS" signature="beforeClassOperations(org.testng.ITestContext, java.lang.String)[pri:0, instance:tests.HomePage@51c8530f]" name="beforeClassOperations" is-config="true" duration-ms="2878" started-at="2019-05-16T12:30:49Z" finished-at="2019-05-16T12:30:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5e17553a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClassOperations -->
+        <test-method status="PASS" signature="testTitleOfPage()[pri:1, instance:tests.HomePage@51c8530f]" name="testTitleOfPage" duration-ms="424" started-at="2019-05-16T12:30:52Z" finished-at="2019-05-16T12:30:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTitleOfPage -->
+        <test-method status="PASS" signature="testOpenAccountWorking()[pri:2, instance:tests.HomePage@51c8530f]" name="testOpenAccountWorking" duration-ms="2469" started-at="2019-05-16T12:30:53Z" finished-at="2019-05-16T12:30:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOpenAccountWorking -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:tests.HomePage@51c8530f]" name="closeBrowser" is-config="true" duration-ms="880" started-at="2019-05-16T12:30:55Z" finished-at="2019-05-16T12:30:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.HomePage -->
+    </test> <!-- firefoxTest -->
+  </suite> <!-- bankApp test suite -->
+</testng-results>

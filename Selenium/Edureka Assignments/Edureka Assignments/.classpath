@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/M1035939/Downloads/junit-4.12-beta-3.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/jxl-2.6.9.jar/jxl-2.6.9.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/charsets.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/deploy.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/javaws.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/jce.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/jfr.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/jfxswt.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/jsse.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/management-agent.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/plugin.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/resources.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/rt.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/security/local_policy.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/security/US_export_policy.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/access-bridge-64.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/cldrdata.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/dnsns.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/jaccess.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/jfxrt.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/localedata.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/nashorn.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/sunec.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/sunjce_provider.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/sunmscapi.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/sunpkcs11.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/ext/zipfs.jar"/>
+	<classpathentry kind="lib" path="D:/JAR files/lib/deploy/ffjcext.zip"/>
+	<classpathentry kind="lib" path="D:/JAR files/log4j-1.2.17/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="D:/jxl-2.6.9.jar.zip"/>
+	<classpathentry kind="lib" path="D:/sqljdbc4-2.0.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

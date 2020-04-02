@@ -1,0 +1,25 @@
+package time_complexity.prime_numbers;
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class primeNumbersClass {
+
+	private static final Scanner scanner = new Scanner(System.in);
+	private static List<Integer> data;
+
+	public static void main(String[] args) {
+		data = new ArrayList<>();
+		int n = scanner.nextInt();
+		scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
+
+		for (int counter = 0; counter < n; counter++) {
+
+		}
+
+	}
+
+}

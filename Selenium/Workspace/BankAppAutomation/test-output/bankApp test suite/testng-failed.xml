@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [bankApp test suite]">
+  <test thread-count="5" name="chromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.RegisterPageTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeClassOperations"/>
+          <include name="testRegisterUser"/>
+        </methods>
+      </class> <!-- tests.RegisterPageTests -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="5" name="firefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.RegisterPageTests">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="beforeClassOperations"/>
+          <include name="testRegisterUser"/>
+        </methods>
+      </class> <!-- tests.RegisterPageTests -->
+    </classes>
+  </test> <!-- firefoxTest(failed) -->
+</suite> <!-- Failed suite [bankApp test suite] -->

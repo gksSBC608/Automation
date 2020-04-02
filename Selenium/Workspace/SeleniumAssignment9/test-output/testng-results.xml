@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="38828" started-at="2018-05-30T14:54:07Z" finished-at="2018-05-30T14:54:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="38828" started-at="2018-05-30T14:54:07Z" finished-at="2018-05-30T14:54:46Z">
+      <class name="assignment.module9.AssignmentModule9">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="launchBrowser" is-config="true" duration-ms="6293" started-at="2018-05-30T14:54:07Z" finished-at="2018-05-30T14:54:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="testBookTicket()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="testBookTicket" duration-ms="18067" started-at="2018-05-30T14:54:14Z" finished-at="2018-05-30T14:54:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBookTicket -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="closeBrowser" is-config="true" duration-ms="265" started-at="2018-05-30T14:54:32Z" finished-at="2018-05-30T14:54:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="launchBrowser" is-config="true" duration-ms="3647" started-at="2018-05-30T14:54:32Z" finished-at="2018-05-30T14:54:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="testLaunchingDropbox()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="testLaunchingDropbox" duration-ms="3271" started-at="2018-05-30T14:54:36Z" finished-at="2018-05-30T14:54:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLaunchingDropbox -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="closeBrowser" is-config="true" duration-ms="323" started-at="2018-05-30T14:54:39Z" finished-at="2018-05-30T14:54:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="launchBrowser" is-config="true" duration-ms="3323" started-at="2018-05-30T14:54:39Z" finished-at="2018-05-30T14:54:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="testLaunchingDropbox()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="testLaunchingDropbox" duration-ms="3183" started-at="2018-05-30T14:54:43Z" finished-at="2018-05-30T14:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLaunchingDropbox -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="closeBrowser" is-config="true" duration-ms="389" started-at="2018-05-30T14:54:46Z" finished-at="2018-05-30T14:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:assignment.module9.AssignmentModule9@1a3869f4]" name="afterTest" is-config="true" duration-ms="1" started-at="2018-05-30T14:54:46Z" finished-at="2018-05-30T14:54:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- assignment.module9.AssignmentModule9 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,110 @@
+{ "lf2":{
+
+  "suite" : {
+    "smoke" : 80,
+    "regression" : 143
+  },
+  "modules" : {
+    "Login/Registration" : {
+      "p1" : 1,
+      "p2" : 1,
+      "p3" : 1
+    },
+    "Booking" : {
+      "p1" : 46,
+      "p2" : 106,
+      "p3" : 8
+    },
+    "Check-In" : {
+      "p1" : 8,
+      "p2" : 15,
+      "p3" : 15
+    },
+    "Manage Booking" : {
+      "p1" : 2,
+      "p2" : 14,
+      "p3" : 1
+    }
+  }
+
+},
+  "lf3":{
+
+    "suite" : {
+      "smoke" : 32,
+      "regression" : 183
+    },
+
+    "modules" : {
+      "Login/Registration" : {
+        "p1" :{"count": 0,"time":0.0},
+        "p2" :{"count": 0,"time":0.0},
+        "p3" : {"count": 0,"time":0.0},
+        "s1" : {"count": 3,"time":0.25}
+      },
+
+      "International Check-In" : {
+        "p1" : {"count": 1,"time":0.15},
+        "p2" : {"count": 2,"time":0.20},
+        "p3" : {"count": 3,"time":0.20},
+        "s1" : {"count": 2,"time":0.30}
+
+      },
+
+      "Domestic Check-In" : {
+        "p1" : {"count": 1,"time":0.15},
+        "p2" : {"count": 2,"time":0.20},
+        "p3" : {"count": 3,"time":0.20},
+        "s1" : {"count": 2,"time":0.30}
+      },
+
+      "Manage Booking" : {
+        "p1" : {"count": 1,"time":0.15},
+        "p2" : {"count": 2,"time":0.20},
+        "p3" : {"count": 3,"time":0.20},
+        "s1" : {"count": 2,"time":0.30}
+
+
+      },
+
+      "Booking With Extras" : {
+        "p1" : {"count": 1,"time":0.15},
+        "p2" : {"count": 2,"time":0.20},
+        "p3" : {"count": 3,"time":0.20},
+        "s1" : {"count": 2,"time":0.30}
+
+      },
+
+      "Booking Checkout" : {
+        "p1" : {"count": 1,"time":0.15},
+        "p2" : {"count": 2,"time":0.20},
+        "p3" : {"count": 3,"time":0.20},
+        "s1" : {"count": 2,"time":0.30}
+      },
+
+      "Booking With Avios" : {
+        "p1" : {"count": 1,"time":0.15},
+        "p2" : {"count": 2,"time":0.20},
+        "p3" : {"count": 3,"time":0.20},
+        "s1" : {"count": 2,"time":0.30}
+      },
+
+      "Booking With Ancillaries" : {
+        "p1" : {"count": 1,"time":0.15},
+        "p2" : {"count": 2,"time":0.20},
+        "p3" : {"count": 3,"time":0.20},
+        "s1" : {"count": 2,"time":0.30}
+      },
+
+      "Booking Flight Search" : {
+        "p1" : {"count": 1,"time":0.15},
+        "p2" : {"count": 2,"time":0.20},
+        "p3" : {"count": 3,"time":0.20},
+        "s1" : {"count": 2,"time":0.30}
+      }
+
+    }
+
+  }
+
+}

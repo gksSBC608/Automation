@@ -1,0 +1,35 @@
+{
+	"id": "4ea4c51d-f381-22c8-66b5-17bef1932e69",
+	"name": "joballocation",
+	"description": "",
+	"order": [
+		"95ef6ff0-069f-e623-ad65-16e76f17aa0b"
+	],
+	"folders": [],
+	"timestamp": 1482320239419,
+	"owner": "1326010",
+	"public": false,
+	"requests": [
+		{
+			"id": "95ef6ff0-069f-e623-ad65-16e76f17aa0b",
+			"headers": "Authorization: Bearer 46Emj_rPQmjgfInlR41CgnRUfCoa\nContent-Type: application/json\n",
+			"url": "http://otd-dev-api.onthedot.com/courier/v1.0/devices/11111/jobs/",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "4ea4c51d-f381-22c8-66b5-17bef1932e69",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://otd-dev-api.onthedot.com/courier/v1.0/devices/11111/jobs/",
+			"description": "joballocation",
+			"descriptionFormat": "html",
+			"time": 1482320239419,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{  \r\n  \"type\":\"NEW\",\r\n  \"message_id\" : \"126cc8e6-ecb4-4b6e-aa77-dd5f1051db3d\",\r\n  \"device_id\" : \"11111\",\r\n  \"message_data\" : {\r\n    \"job_number\" : 701604322,\r\n    \"customer\" : {\r\n      \"key\" : \"TEST14\",\r\n      \"name\" : \"IT PROJECTS TEAM\",\r\n      \"category\" : \"501\"\r\n    },\r\n    \"courier\" : {\r\n      \"id\" : 90085,\r\n      \"key\" : \"805\",\r\n      \"pay_amount\" : 19.64,\r\n      \"currency\" : \"GBP\"\r\n    },\r\n    \"vehicle_type\" : \"NA\",\r\n    \"service\" : \"V\",\r\n    \"service_group\" : \"1\",\r\n    \"booking_date\" : \"2016-07-04T13:50:00.000Z\",\r\n    \"pickup_delay\" : 75,\r\n   \"deliver_by\" : \"2016-07-04T17:45:00.000Z\",\r\n    \"caller\" : \"Nick Grover\",\r\n    \"calculate_waiting_time\" : true,\r\n    \"journey_miles\" : 29,\r\n    \"viewed_timer\" : 600,\r\n    \"adhoc_scanning\" : false,\r\n    \"pin_number\" : \"85143\",\r\n    \"ndi_collection\" : false,\r\n    \"stops\" : [\r\n      {\r\n        \"stop_id\" : 1,\r\n        \"stop_order\" : 1,\r\n        \"stop_status\" : \"NotStarted\",\r\n        \"address\" : {\r\n          \"company\" : \"CITYSPRINT (UK) LTD\",\r\n          \"address1\" : \"58    -62 SCRUTTON STREET\",\r\n          \"address2\" : \"LONDON\",\r\n          \"town\" : \"LONDON\",\r\n          \"postcode\" : \"EC2A 4PH\",\r\n          \"country_code\" : \"GBR\",\r\n          \"country_name\" : \"UNITED KINGDOM\",\r\n          \"latitude\" : \"51.523132\",\r\n          \"longitude\" : \"-0.081445\"\r\n        },\r\n        \"coded_location\" : {\r\n          \"coded_location_string\" : \"\",\r\n          \"mandatory_flag\" : false,\r\n          \"description\" : \"\"\r\n        }\r\n      },\r\n      {\r\n        \"stop_id\" : 2,\r\n        \"stop_order\" : 2,\r\n        \"stop_status\" : \"NotStarted\",\r\n        \"address\" : {\r\n          \"company\" : \"CITYSPRINT UK\",\r\n          \"address1\" : \"REDCENTRAL\",\r\n          \"address2\" : \"60 HIGH STREET\",\r\n          \"town\" : \"REDHILL\",\r\n          \"postcode\" : \"RH1 1SH\",\r\n          \"country_code\" : \"GBR\",\r\n          \"country_name\" : \"UNITED KINGDOM\",\r\n          \"latitude\" : \"51.238566\",\r\n          \"longitude\" : \"-0.169236\"\r\n        },\r\n        \"coded_location\" : {\r\n          \"coded_location_string\" : \"\",\r\n          \"mandatory_flag\" : false,\r\n          \"description\" : \"\"\r\n        }\r\n      }\r\n    ],\r\n    \"exceptions\" : [\r\n      {\r\n        \"exception_type\" : \"ITEM-DELIVERY\",\r\n        \"exception_list\" : [\r\n          {\r\n            \"id\" : \"REFUSED\",\r\n            \"description\" : \"REFUSED\"\r\n          },\r\n          {\r\n            \"id\" : \"WRONG ITEM\",\r\n            \"description\" : \"WRONG ITEM DELIVERED\"\r\n          },\r\n          {\r\n            \"id\" : \"LOST ITEM\",\r\n            \"description\" : \"ITEM NOT ON BOARD\"\r\n          },\r\n          {\r\n            \"id\" : \"DAMAGED\",\r\n            \"description\" : \"ITEM REFUSED DAMAGED\"\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"exception_type\" : \"ITEM-COLLECTION\",\r\n        \"exception_list\" : [\r\n          {\r\n            \"id\" : \"DAMAGEDCOL\",\r\n            \"description\" : \"ITEM DAMAGED\"\r\n          },\r\n          {\r\n            \"id\" : \"WRONGPACKA\",\r\n            \"description\" : \"INCORRECTLY PACKED\"\r\n          },\r\n          {\r\n            \"id\" : \"UNAVAILABL\",\r\n            \"description\" : \"ITEM NOT AVAILABLE\"\r\n          },\r\n          {\r\n            \"id\" : \"TOO LARGE\",\r\n            \"description\" : \"ITEM TOO LARGE FOR SERVICE\"\r\n          },\r\n          {\r\n            \"id\" : \"NO ITEM    \",\r\n            \"description\" : \"NO ITEM TO COLLECT\"\r\n          }\r\n        ]\r\n      },\r\n      {\r\n        \"exception_type\" : \"STOP\",\r\n        \"exception_list\" : [\r\n          {\r\n            \"id\" : \"CUSTNOTIN\",\r\n            \"description\" : \"CUSTOMER NOT IN\"\r\n          },\r\n          {\r\n            \"id\" : \"NOTHITOCOL\",\r\n            \"description\" : \"NOTHING TO COLLECT\"\r\n          },\r\n          {\r\n            \"id\" : \"ADDUNKNOWN\",\r\n            \"description\" : \"CANNOT LOCATE ADDRESS\"\r\n          },\r\n          {\r\n            \"id\" : \"SECUINCSTO\",\r\n            \"description\" : \"SECURITY INCIDENT\"\r\n          },\r\n          {\r\n            \"id\" : \"COLL ADRES\",\r\n            \"description\" : \"UNABLE TO LOCATE COLL  ADDRESS\"\r\n          },\r\n          {\r\n            \"id\" : \"NO ACCESS\",\r\n            \"description\" : \"NO ACCESS TO BUILDING\"\r\n          },\r\n          {\r\n            \"id\" : \"DEL ADDRES\",\r\n            \"description\" : \"UNABLE TO LOCATE DEL ADDRESS\"\r\n          },\r\n          {\r\n            \"id\" : \"DEL ABORT\",\r\n            \"description\" : \"DELIVERY ABORTED\"\r\n          }\r\n        ]\r\n      }\r\n    ]\r\n  }\r\n}"
+		}
+	]
+}

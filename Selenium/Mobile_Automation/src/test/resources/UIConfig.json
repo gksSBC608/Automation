@@ -1,0 +1,64 @@
+{
+	"UIConfig": {
+		"environment": {
+			"UAT": "uat",
+			"T1": "raxOne",
+			"T2": "raxTwo",
+			"T3": "raxThree",
+			"T4": "raxFour",
+			"D1": "raxDev",
+			"DR": "dr",
+			"PROD": "prod",
+			"Test-5 External": "test5External",
+			"Test-3": "test3"
+		},
+		"browser": {
+			"IE": "ie",
+			"FireFox": "firefox",
+			"Chrome": "chrome"
+		},
+		"testsuite": {
+			"lf":{
+				"Smoke Test": "smoke",
+				"Regression": "regression"
+			},
+			"cam":{
+				"Smoke Test": "smoke",
+				"Regression": "regression"
+			}
+		},
+		"priority": {
+			"lf": {
+				"P1": "p1",
+				"P2": "p2",
+				"P3": "p3",
+				"Smoke": "s1"
+			},
+			"cam":{
+				"P1" : "p1",
+				"P2" : "p2",
+				"P3" : "p3"
+			}
+
+		},
+		"module": {
+			"lf": {
+				"Booking Checkout": "booking.checkout",
+				"Booking Flight Search": "booking.search_flight",
+				"Booking With Ancillaries": "booking.ancillaries",
+				"Booking With Avios": "booking.avios",
+				"Booking With Extras": "booking.extras",
+				"Domestic Check-In": "lf3_checkin.domestic",
+				"International Check-In": "lf3_checkin.international",
+				"Login/Registration": "login_and_register",
+				"Manage Booking": "leap_manage_booking"
+			},
+			"cam":{
+				"Login/Registration" : "login_and_register",
+				"Booking" : "booking",
+				"Check-In" : "leap_checkin_seatopener",
+				"Manage Booking": "leap_manage_booking"
+			}
+		}
+	}
+}

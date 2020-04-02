@@ -1,0 +1,9 @@
+package util;
+
+public class SeleniumUtil {
+
+	public SeleniumUtil() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,188 @@
+package test_definition;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.lang.reflect.Method;
+import java.net.URL;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.ios.IOSDriver;
+import io.appium.java_client.remote.IOSMobileCapabilityType;
+
+import org.openqa.selenium.ScreenOrientation;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.DisplayOrder;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
+import com.relevantcodes.extentreports.NetworkMode;
+
+import PageBase.BasePage;
+import PageBase.BasePageRegression;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
+import utilities.ActionUtility;
+import utilities.DriverBuilder;
+
+public class Bugs extends BasePageRegression {
+
+	/*
+	 * trip list and active trip page
+	 */
+
+	@Test(groups = { "smoke", "p1" })
+	public void NMA_1351_VerifyMapIsGettingRemovedInTripListDetailsWhenChangingTripsInTripDetails() throws Exception {
+		loginPage.enterUserNameAndPasswordInLoginInPage();
+		loginPage.clickOnLoginButton();
+		welcomePage.enterTheValueForCompanyName();
+		welcomePage.enterTheVehicle();
+		// welcomePage.enterTheUnit();
+		// welcomePage.enterTheFirstCrew();
+		welcomePage.clickOnNextButtonInWelcomePage();
+		tripList.verifyTripListHeader();
+		tripList.VerifyActiveTripHeader();
+		tripList.selectAssignedStatus();
+		tripList.verifyTheTripDetailsPage();
+		tripList.verfiyTheStatusIDInTripDetailsPage("ASSIGNED");
+		// tripList.verfiyTheTripStatusAndRunNumberAndTripIDInTripDetailsPage();
+		tripList.clickOnGPSimageInPickUpTab();
+		// maps.verifyTheSpinnerAfterTappingGPSIcon();
+		// maps.verifyTheDirectionLayoutDisplayedAfterClickingOnGPSIcon();
+		maps.clickOnSatellite();
+	}
+
+	@Test(groups = { "smoke", "p1" })
+	public void NMA_1190_VerifyDirectionListIsNotDisplayedInPickUpTab() throws Exception {
+		loginPage.enterUserNameAndPasswordInLoginInPage();
+		loginPage.clickOnLoginButton();
+		welcomePage.enterTheValueForCompanyName();
+		welcomePage.enterTheVehicle();
+		// welcomePage.enterTheUnit();
+		// welcomePage.enterTheFirstCrew();
+		welcomePage.clickOnNextButtonInWelcomePage();
+		tripList.verifyTripListHeader();
+		tripList.VerifyActiveTripHeader();
+		tripList.selectEnRouteStatusTrip();
+		tripList.clickOnGPSimageInPickUpTab();
+		// maps.verifyTheSpinnerAfterTappingGPSIcon();
+		// maps.verifyTheDirectionLayoutDisplayedAfterClickingOnGPSIcon();
+		maps.clickOnSatellite();
+	}
+
+	@Test(groups = { "smoke", "p1" })
+	public void NMA_1021_VerifyMapIsGettingRemovedInTripListDetailsWhenChangingTripsInTripDetails() throws Exception {
+		loginPage.enterUserNameAndPasswordInLoginInPage();
+		loginPage.clickOnLoginButton();
+		welcomePage.enterTheValueForCompanyName();
+		welcomePage.enterTheVehicle();
+		// welcomePage.enterTheUnit();
+		// welcomePage.enterTheFirstCrew();
+		welcomePage.clickOnNextButtonInWelcomePage();
+		tripList.verifyTripListHeader();
+		tripList.VerifyActiveTripHeader();
+		tripList.selectAssignedStatus();
+		tripList.verifyTheTripDetailsPage();
+		tripList.verfiyTheStatusIDInTripDetailsPage("ASSIGNED");
+		tripList.verfiyTheTripStatusAndRunNumberAndTripIDInTripDetailsPage();
+		tripList.clickOnGPSimageInPickUpTab();
+		// maps.verifyTheSpinnerAfterTappingGPSIcon();
+		// maps.verifyTheDirectionLayoutDisplayedAfterClickingOnGPSIcon();
+		maps.clickOnSatellite();
+	}
+
+	@Test(groups = { "smoke", "p1" })
+	public void NMA_1006_821_VerifyTransportInformationMileagePatientAlertsStatusTimeStampPatientInformationWeightImplementedInTripDetails()
+			throws Exception {
+		loginPage.enterUserNameAndPasswordInLoginInPage();
+		loginPage.clickOnLoginButton();
+		welcomePage.enterTheValueForCompanyName();
+		welcomePage.enterTheVehicle();
+		// welcomePage.enterTheUnit();
+		// welcomePage.enterTheFirstCrew();
+		welcomePage.clickOnNextButtonInWelcomePage();
+		tripList.verifyTripListHeader();
+		tripList.VerifyActiveTripHeader();
+		tripList.selectAssignedStatus();
+		tripList.verifyTheTripDetailsPage();
+		tripList.verfiyTheTripStatusAndRunNumberAndTripIDInTripDetailsPage();
+		tripList.verifyThePickUpdetailsForAssignedOrCancelledOrCompletedInTripDetails();
+		tripList.navigateToTripInformationTabORPatientInformation();
+		tripList.verifyThePatientInformationNameAgeGenderweightANdNoteInTripInfoTripDetailsPage();
+		tripList.verifyTheTransportInformationNameAgeGenderweightANdNoteInTripInfoTripDetailsPage();
+	}
+
+	@Test(groups = { "smoke", "p1" })
+	public void NMA_869_VerifyTripInfoRealTimeNotesAreDisplayingInActiveTrip() throws Exception {
+		loginPage.enterUserNameAndPasswordInLoginInPage();
+		loginPage.clickOnLoginButton();
+		welcomePage.enterTheValueForCompanyName();
+		welcomePage.enterTheVehicle();
+		// welcomePage.enterTheUnit();
+		// welcomePage.enterTheFirstCrew();
+		welcomePage.clickOnNextButtonInWelcomePage();
+		tripList.verifyTripListHeader();
+		tripList.VerifyActiveTripHeader();
+		tripList.selectAssignedStatus();
+		tripList.verifyTheTripDetailsPage();
+		tripList.verfiyTheStatusIDInTripDetailsPage("ASSIGNED");
+		tripList.verfiyTheTripStatusAndRunNumberAndTripIDInTripDetailsPage();
+		tripList.clickOnGPSimageInPickUpTab();
+		// maps.verifyTheSpinnerAfterTappingGPSIcon();
+		// maps.verifyTheDirectionLayoutDisplayedAfterClickingOnGPSIcon();
+		maps.clickOnSatellite();
+	}
+
+	@Test(groups = { "smoke", "p1" })
+	public void NMA_616_612_VerifyTripStatusCompleteORCancelledAreDisplying() throws Exception {
+		loginPage.enterUserNameAndPasswordInLoginInPage();
+		loginPage.clickOnLoginButton();
+		welcomePage.enterTheValueForCompanyName();
+		welcomePage.enterTheVehicle();
+		// welcomePage.enterTheUnit();
+		// welcomePage.enterTheFirstCrew();
+		welcomePage.clickOnNextButtonInWelcomePage();
+		tripList.verifyTripListHeader();
+		tripList.VerifyActiveTripHeader();
+		tripList.selectAssignedStatus();
+		tripList.clickOnBackButtonInTripDetailsPage();
+		tripList.selectCancelledStatus();
+		tripList.clickOnBackButtonInTripDetailsPage();
+	}
+
+	@AfterMethod
+	public void endApplication(ITestResult result) throws Exception {
+		// Method need to added in basePage
+		if (result.getStatus() == ITestResult.SUCCESS) {
+			logger.log(LogStatus.PASS, "Passed");
+		} else if (result.getStatus() == ITestResult.FAILURE) {
+			String screenShot = DriverBuilder.takeScreenshot(driver);
+			System.out.println(screenShot);
+			logger.log(LogStatus.FAIL, logger.addScreenCapture(screenShot));
+			// logger.log(LogStatus.FAIL, "Failed");
+
+		}
+		report.endTest(logger);
+		report.flush();
+		driver.quit();
+		Runtime.getRuntime().exec(String.format("adb -s %s logcat -b all -c", "d5beea8e"));
+
+	}
+
+}

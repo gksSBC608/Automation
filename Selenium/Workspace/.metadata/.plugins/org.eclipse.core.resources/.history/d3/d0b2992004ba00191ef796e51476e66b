@@ -1,0 +1,65 @@
+package tests;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class FlightBookingTest extends BaseTest {
+
+	@Test
+	public void testThatResultsAppearForAOneWayJourney() {
+
+		driver.get("https://www.cleartrip.com/");
+		waitFor(2000);
+		selUtil.findById("OneWay").click();
+
+		selUtil.findById("FromTag").clear();
+		selUtil.findById("FromTag").sendKeys("Bangalore");
+
+		String id = "ui-id-1";
+		waitFor(2000);
+		List<WebElement> originOptions = selUtil.findById(id).findElements(By.tagName("li"));
+		originOptions.get(0).click();
+
+		String TO_TAG = "toTag";
+		selUtil.findById(TO_TAG).clear();
+		selUtil.findById(TO_TAG).sendKeys("Delhi");
+
+
+		waitFor(2000);
+		List<WebElement> destinationOptions = driver.findElement(By.id("ui-id-2")).findElements(By.tagName("li"));
+		destinationOptions.get(0).click();
+
+		String xpath = "//*[@id='ui-datepicker-div']/div[1]/table/tbody/tr[3]/td[7]/a";
+		selUtil.findByXpath(xpath).click();
+
+		String id_button = "SearchBtn";
+		selUtil.findById(id_button).click();
+
+		waitFor(5000);
+		Assert.assertTrue(isElementPresent(By.className("searchSummary")));
+
+	}
+
+	private void waitFor(int durationInMilliSeconds) {
+		try {
+			Thread.sleep(durationInMilliSeconds);
+		} catch (InterruptedException e) {
+			e.printStackTrace(); // To change body of catch statement use File | Settings | File Templates.
+		}
+	}
+
+	private boolean isElementPresent(By by) {
+		try {
+			driver.findElement(by);
+			return true;
+		} catch (NoSuchElementException e) {
+			return false;
+		}
+	}
+
+}

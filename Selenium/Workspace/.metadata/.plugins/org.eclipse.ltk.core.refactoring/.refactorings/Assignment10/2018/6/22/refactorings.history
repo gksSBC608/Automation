@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;practice.module10.test2.pages.WelcomePage&apos; to &apos;WelcomePage_BarnersNobel&apos;&#x0D;&#x0A;- Original project: &apos;Assignment10&apos;&#x0D;&#x0A;- Original element: &apos;practice.module10.test2.pages.WelcomePage&apos;&#x0D;&#x0A;- Renamed element: &apos;practice.module10.test2.pages.WelcomePage_BarnersNobel&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;WelcomePage&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;practice.module10.test2.pages{WelcomePage.java[WelcomePage" matchStrategy="1" name="WelcomePage_BarnersNobel" qualified="false" references="true" similarDeclarations="false" stamp="1527944265175" textual="false" version="1.0"/>
+</session>

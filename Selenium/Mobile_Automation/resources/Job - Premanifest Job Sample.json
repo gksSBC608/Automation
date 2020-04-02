@@ -1,0 +1,200 @@
+{
+  "channels": [
+    "30814"
+  ],
+  "_id": "job:1002_30814",
+  "_rev": "",
+  "type": "NEW",
+   "message_id" : "402dd0b7-4a43-4018-b4f9-ebc57f7abc7e",
+   "device_id" : "30814",
+   "message_data" : {
+      "job_number" : 1002,
+      "customer" : {
+        "key" : "TEST14",
+        "name" : "IT PROJECTS TEAM",
+        "category" : "501"
+      },
+      "courier" : {
+        "id" : 90085,
+        "key" : "805",
+        "pay_amount" : 14.59,
+        "currency" : "GBP"
+      },
+      "vehicle_type" : "NA",
+      "service" : "B",
+      "service_group" : "1",
+      "booking_date" : "2016-11-30T15:06:00.000Z",
+      "pickup_delay" : 75,
+      "deliver_by" : "2016-11-30T22:45:00.000Z",
+      "caller" : "TESTERYYY",
+      "calculate_waiting_time" : true,
+      "journey_miles" : 29,
+      "viewed_timer" : 600,
+      "adhoc_scanning" : true,
+      "pin_number" : "11111",
+      "ndi_collection" : false,
+	  "wait_and_return": false,
+      "stops" : [
+        {
+          "stop_id" : 1,
+          "stop_order" : 1,
+          "stop_status" : "NotStarted",
+          "contact": "contact 1",
+		  "instructions": "instructions 1",
+          "address" : {
+            "company" : "CITYSPRINT (UK) LTD",
+            "address1" : "PRE-MANIFIEST SCRUTTON STREET",
+            "town" : "LONDON",
+            "postcode" : "EC2A 4PH",
+            "country_code" : "GBR",
+            "country_name" : "UNITED KINGDOM",
+            "latitude" : "51.523132",
+            "longitude" : "-0.081445"
+          },
+          "coded_location" : {
+            "coded_location_string" : "",
+            "mandatory_flag" : false,
+            "description" : ""
+          }
+        },
+        {
+          "stop_id" : 2,
+          "stop_order" : 2,
+          "stop_status" : "NotStarted",
+          "contact": "contact 2",
+		  "instructions": "instructions 2",
+          "address" : {
+            "company" : "CITYSPRINT UK",
+            "address1" : "PRE-MANIFIEST REDCENTRAL",
+            "address2" : "60 HIGH STREET",
+            "town" : "REDHILL",
+            "postcode" : "RH1 1SH",
+            "country_code" : "GBR",
+            "country_name" : "UNITED KINGDOM",
+            "latitude" : "51.238567",
+            "longitude" : "-0.169236"
+          },
+          "coded_location" : {
+            "coded_location_string" : "",
+            "mandatory_flag" : false,
+            "description" : ""
+          }
+        }
+      ],
+      "manifest" : {
+        "type" : "SCAN",
+        "items" : [
+          {
+            "reference" : "AA",
+            "description" : "ABC",
+            "planned_collect_stop" : 1,
+            "planned_drop_stop" : 2,
+            "item_type" : "PLANNED",
+            "state" : "COLLECT"
+          },
+		  {
+            "reference" : "BB",
+            "description" : "ABC",
+            "planned_collect_stop" : 1,
+            "planned_drop_stop" : 2,
+            "item_type" : "PLANNED",
+            "state" : "COLLECT"
+          },
+		  {
+            "reference" : "CC",
+            "description" : "ABC",
+            "planned_collect_stop" : 1,
+            "planned_drop_stop" : 2,
+            "item_type" : "PLANNED",
+            "state" : "COLLECT"
+          }
+        ]
+      },
+      "exceptions" : [
+        {
+          "exception_type" : "ITEM-DELIVERY",
+          "exception_list" : [
+            {
+              "id" : "REFUSED",
+              "description" : "REFUSED"
+            },
+            {
+              "id" : "WRONG ITEM",
+              "description" : "WRONG ITEM DELIVERED"
+            },
+            {
+              "id" : "LOST ITEM",
+              "description" : "ITEM NOT ON BOARD"
+            },
+            {
+              "id" : "DAMAGED",
+              "description" : "ITEM REFUSED DAMAGED"
+            }
+          ]
+        },
+        {
+          "exception_type" : "ITEM-COLLECTION",
+          "exception_list" : [
+            {
+              "id" : "DAMAGEDCOL",
+              "description" : "ITEM DAMAGED"
+            },
+            {
+              "id" : "WRONGPACKA",
+              "description" : "INCORRECTLY PACKED"
+            },
+            {
+              "id" : "UNAVAILABL",
+              "description" : "ITEM NOT AVAILABLE"
+            },
+            {
+              "id" : "TOO LARGE",
+              "description" : "ITEM TOO LARGE FOR SERVICE"
+            },
+            {
+              "id" : "NO ITEM",
+              "description" : "NO ITEM TO COLLECT"
+            }
+          ]
+        },
+        {
+          "exception_type" : "STOP",
+          "exception_list" : [
+            {
+              "id" : "CUSTNOTIN",
+              "description" : "CUSTOMER NOT IN"
+            },
+            {
+              "id" : "NOTHITOCOL",
+              "description" : "NOTHING TO COLLECT"
+            },
+            {
+              "id" : "ADDUNKNOWN",
+              "description" : "CANNOT LOCATE ADDRESS"
+            },
+            {
+              "id" : "SECUINCSTO",
+              "description" : "SECURITY INCIDENT"
+            },
+            {
+              "id" : "COLL ADRES",
+              "description" : "UNABLE TO LOCATE COLL  ADDRESS"
+            },
+            {
+              "id" : "NO ACCESS",
+              "description" : "NO ACCESS TO BUILDING"
+            },
+            {
+              "id" : "DEL ADDRES",
+              "description" : "UNABLE TO LOCATE DEL ADDRESS"
+            },
+            {
+              "id" : "DEL ABORT",
+              "description" : "DELIVERY ABORTED"
+            }
+          ]
+        }
+      ]
+    }
+
+}

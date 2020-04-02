@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="test_definition.TripList_TripDetails"/>
+      <class name="test_definition.TripList"/>
+      <class name="test_definition.Welcome"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="test_definition.TripList">
+        <methods>
+          <include name="endApplication"/>
+          <include name="NMA_744_VerifyActiveTripPickUpScreenDetails"/>
+          <include name="launchapplication"/>
+          <include name="NMA_368_VerifyPickUpScreeninActiveTrip"/>
+        </methods>
+      </class> <!-- test_definition.TripList -->
+      <class name="test_definition.Welcome">
+        <methods>
+          <include name="launchapplication"/>
+          <include name="endApplication"/>
+        </methods>
+      </class> <!-- test_definition.Welcome -->
+      <class name="test_definition.TripList_TripDetails">
+        <methods>
+          <include name="NMA_989_VerifyTheDropOffScreenTripsDetails"/>
+          <include name="NMA_961_VerifyTheTripDetailsInfoForAssignedTrips"/>
+          <include name="VerifyNoCrashInApplicationIfWeKeepOnNavigatingToTripDetailsScreen"/>
+          <include name="launchapplication"/>
+          <include name="endApplication"/>
+          <include name="VerifyTheTripHeaderStatusWithTripInformationInTripDetailsPage"/>
+        </methods>
+      </class> <!-- test_definition.TripList_TripDetails -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

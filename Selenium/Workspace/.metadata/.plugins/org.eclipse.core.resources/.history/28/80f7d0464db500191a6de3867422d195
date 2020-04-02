@@ -1,0 +1,37 @@
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeClass;
+
+import com.sun.javafx.PlatformUtil;
+
+public class BaseTest {
+
+	protected WebDriver driver;
+
+	public BaseTest() {
+	}
+
+	@SuppressWarnings("restriction")
+	@BeforeClass
+	public void initialize() {
+		System.out.println("In Basetest's initialize method");
+		driver = new ChromeDriver();
+		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+//		try {
+//			if (PlatformUtil.isMac()) {
+//				System.out.println("MAC platform");
+//				System.setProperty("webdriver.chrome.driver", "chromedriver");
+//			}
+//			if (PlatformUtil.isWindows()) {
+//				System.out.println("Windows platform");
+//				System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+//			}
+//			if (PlatformUtil.isLinux()) {
+//				System.setProperty("webdriver.chrome.driver", "chromedriver_linux");
+//			}
+//		} catch (Exception ex) {
+//			ex.printStackTrace();
+//		}
+
+	}
+}

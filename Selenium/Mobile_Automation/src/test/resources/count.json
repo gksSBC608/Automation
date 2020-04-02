@@ -1,0 +1,110 @@
+{ "lf2":{
+
+  "suite" : {
+    "smoke" : {"count":80, "time":"5:30"},
+    "regression" : {"count":143, "time":"7:15"}
+  },
+  "modules" : {
+    "Login/Registration" : {
+      "p1" : {"count":1, "time":"0:05"},
+      "p2" : {"count":1, "time":"0:05"},
+      "p3" : {"count":1, "time":"0:05"}
+    },
+    "Booking" : {
+      "p1" : {"count":46, "time":"2:30"},
+      "p2" : {"count":106, "time":"5:30"},
+      "p3" : {"count":8, "time":"0:24"}
+    },
+    "Check-In" : {
+      "p1" : {"count":8, "time":"0:40"},
+      "p2" : {"count":15, "time":"1:15"},
+      "p3" : {"count":15, "time":"1:15"}
+    },
+    "Manage Booking" : {
+      "p1" : {"count":2, "time":"0:12"},
+      "p2" : {"count":14, "time":"1:24"},
+      "p3" : {"count":1, "time":"0:06"}
+    }
+  }
+
+},
+  "lf3":{
+
+    "suite" : {
+      "smoke" : {"count":32, "time":"2:40"},
+      "regression" : {"count":183, "time":"15:30"}
+    },
+
+    "modules" : {
+      "Login/Registration" : {
+        "p1" : {"count": 0,"time":"0:00"},
+        "p2" : {"count": 0,"time":"0:00"},
+        "p3" : {"count": 0,"time":"0:00"},
+        "s1" : {"count": 3,"time":"0:09"}
+      },
+
+      "International Check-In" : {
+        "p1" : {"count": 1,"time":"0:05"},
+        "p2" : {"count": 2,"time":"0:10"},
+        "p3" : {"count": 1,"time":"0:05"},
+        "s1" : {"count": 2,"time":"0:10"}
+
+      },
+
+      "Domestic Check-In" : {
+        "p1" : {"count": 4,"time":"0:20"},
+        "p2" : {"count": 5,"time":"0:25"},
+        "p3" : {"count": 9,"time":"0:45"},
+        "s1" : {"count": 10,"time":"0:50"}
+      },
+
+      "Manage Booking" : {
+        "p1" : {"count": 0,"time":"0:00"},
+        "p2" : {"count": 16,"time":"1:36"},
+        "p3" : {"count": 0,"time":"0:00"},
+        "s1" : {"count": 4,"time":"0:24"}
+
+
+      },
+
+      "Booking With Extras" : {
+        "p1" : {"count": 0,"time":"0:00"},
+        "p2" : {"count": 5,"time":"0:03"},
+        "p3" : {"count": 0,"time":"0:00"},
+        "s1" : {"count": 1,"time":"0:03"}
+
+      },
+
+      "Booking Checkout" : {
+        "p1" : {"count": 12,"time":"0:36"},
+        "p2" : {"count": 40,"time":"2:00"},
+        "p3" : {"count": 1,"time":"0:03"},
+        "s1" : {"count": 10,"time":"0:30"}
+      },
+
+      "Booking With Avios" : {
+        "p1" : {"count": 0,"time":"0:00"},
+        "p2" : {"count": 5,"time":"0:15"},
+        "p3" : {"count": 0,"time":"0:00"},
+        "s1" : {"count": 0,"time":"0:00"}
+      },
+
+      "Booking With Ancillaries" : {
+        "p1" : {"count": 14,"time":"0:42"},
+        "p2" : {"count": 24,"time":"1:12"},
+        "p3" : {"count": 0,"time":"0:00"},
+        "s1" : {"count": 1,"time":"0:03"}
+      },
+
+      "Booking Flight Search" : {
+        "p1" : {"count": 6,"time":"0:18"},
+        "p2" : {"count": 38,"time":"1:54"},
+        "p3" : {"count": 0,"time":"0:00"},
+        "s1" : {"count": 1,"time":"0:03"}
+      }
+
+    }
+
+  }
+
+}

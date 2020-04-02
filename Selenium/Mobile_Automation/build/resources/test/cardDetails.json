@@ -1,0 +1,74 @@
+{
+  "visa": {
+    "cardType": "VI",
+//    "cardNumber": "4111 1111 1111 1111",
+    "cardNumber": "4444333322221111",
+    "expiryDate": "08/2018",
+    "nameOnCard": "Mr Jack Daniel",
+    "securityNumber": "737"
+  },
+  "masterCard": {
+    "cardType": "MC",
+    "cardNumber": "5555444433331111",
+    "expiryDate": "08/2018",
+    "nameOnCard": "Mr Jack Daniel",
+    "securityNumber": "737"
+  },
+  "masterDebit": {
+    "cardType": "MD",
+    "cardNumber": "5160010101010100",
+    "expiryDate": "08/2018",
+    "nameOnCard": "Mr Jack Daniel",
+    "securityNumber": "737"
+  },
+  "americanExpress": {
+    "cardType": "AX",
+    "cardNumber": "370000000000002",
+    "expiryDate": "08/2018",
+    "nameOnCard": "Mr Jack Daniel",
+    "securityNumber": "7373"
+  },
+  "diners": {
+    "cardType": "DI",
+    "cardNumber": "36006666333344",
+    "expiryDate": "08/2018",
+    "nameOnCard": "Mr Jack Daniel",
+    "securityNumber": "737"
+  },
+  "visaDebit": {
+    "cardType": "VD",
+    "cardNumber": "4921810000000000",
+    "expiryDate": "08/2018",
+    "nameOnCard": "Mr Jack Daniel",
+    "securityNumber": "737"
+  },
+  "maestro": {
+    "cardType": "SW",
+    "cardNumber": "6731012345678906",
+    "expiryDate": "08/2018",
+    "nameOnCard": "Mr Jack Daniel",
+    "securityNumber": "737"
+  },
+  "electron": {
+    "cardType": "EC",
+    "cardNumber": "4001150015001500",
+    "expiryDate": "08/2018",
+    "nameOnCard": "Mr Jack Daniel",
+    "securityNumber": "737"
+  },
+  "incorrectVisa": {
+  "cardType": "VI",
+  "cardNumber": "4111111111111111",
+  "expiryDate": "08/2018",
+    "nameOnCard": "Mr Jack Daniel",
+  "securityNumber": ""
+},
+  "incorrectCardDetails": {
+  "cardType": "VI",
+  "cardNumber": "4111111111111234",
+  "expiryDate": "08/2017",
+  "nameOnCard": "Mr Jack Daniel",
+  "securityNumber": "777"
+}
+
+}

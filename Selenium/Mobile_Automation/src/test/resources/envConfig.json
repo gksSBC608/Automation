@@ -1,0 +1,17 @@
+{
+  "env": {
+      "uat":{
+        "appUrl": "http://10.1.26.200",
+        "userName": "arun.shanmukha@mindtree.com",
+        "password": "arns86@gmail"
+      },
+
+      "sit":{
+        "appUrl": "http://10.1.26.200",
+        "userName": "arun.shanmukha@mindtree.com",
+        "password": "arns86@gmail"
+
+      }
+  }
+
+}

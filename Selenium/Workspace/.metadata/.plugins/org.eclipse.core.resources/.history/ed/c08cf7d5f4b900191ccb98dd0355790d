@@ -1,0 +1,21 @@
+package tests;
+
+import org.testng.annotations.Test;
+
+import pages.Homepage;
+import pages.HotelPage;
+
+public class HotelBookingTest extends BaseTest {
+	
+	private Homepage homePage;
+	private HotelPage hotelPage;
+
+	@Test
+	public void shouldBeAbleToSearchForHotels() {
+		driver.get("https://www.cleartrip.com/");
+		homePage.clickHotelLink();
+		hotelPage.searchHotel();
+
+	}
+
+}

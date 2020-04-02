@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="DemoautTest(failed)">
+    <classes>
+      <class name="project.test.ValidateUserTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="validateCredentialsTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- project.test.ValidateUserTest -->
+      <class name="project.test.ValidateFlightBookingsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="testFlightBookings"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- project.test.ValidateFlightBookingsTest -->
+    </classes>
+  </test> <!-- DemoautTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
