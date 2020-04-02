@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="51904" started-at="2018-06-02T13:07:13Z" finished-at="2018-06-02T13:08:05Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="51904" started-at="2018-06-02T13:07:13Z" finished-at="2018-06-02T13:08:05Z">
+      <class name="assignment.module10.AssignmentModule10">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:assignment.module10.AssignmentModule10@77ec78b9]" name="launchBrowser" is-config="true" duration-ms="3823" started-at="2018-06-02T13:07:13Z" finished-at="2018-06-02T13:07:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="testBarnesNobel()[pri:0, instance:assignment.module10.AssignmentModule10@77ec78b9]" name="testBarnesNobel" duration-ms="36157" started-at="2018-06-02T13:07:17Z" finished-at="2018-06-02T13:07:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBarnesNobel -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:assignment.module10.AssignmentModule10@77ec78b9]" name="closeBrowser" is-config="true" duration-ms="2186" started-at="2018-06-02T13:07:53Z" finished-at="2018-06-02T13:07:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:assignment.module10.AssignmentModule10@77ec78b9]" name="launchBrowser" is-config="true" duration-ms="2618" started-at="2018-06-02T13:07:55Z" finished-at="2018-06-02T13:07:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="validateCredentialsTest()[pri:0, instance:assignment.module10.AssignmentModule10@77ec78b9]" name="validateCredentialsTest" duration-ms="6775" started-at="2018-06-02T13:07:58Z" finished-at="2018-06-02T13:08:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCredentialsTest -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:assignment.module10.AssignmentModule10@77ec78b9]" name="closeBrowser" is-config="true" duration-ms="297" started-at="2018-06-02T13:08:05Z" finished-at="2018-06-02T13:08:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- assignment.module10.AssignmentModule10 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
